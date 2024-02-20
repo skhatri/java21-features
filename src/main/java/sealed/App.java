@@ -94,10 +94,10 @@ non-sealed class Neptune extends Planet {
 public class App {
     public static void main(String[] args) {
         List<Planet> p = List.of(
-                new Mercury(), new Venus(), new Earth(), new Mars(), new Jupiter(), new Saturn(),
+                new Mercury(), new Venus(), new Earth(), new Mars(), new Jupiter(), new Saturn(), new Uranus(),
                 new Neptune()
         );
-        int value = new SecureRandom().nextInt(7);
+        int value = new SecureRandom().nextInt(p.size());
         Planet planet = p.get(value);
         switch (planet) {
             case Mercury m:
