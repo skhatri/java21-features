@@ -10,7 +10,7 @@ Features Tests and Examples
 | Record Patterns         |```./gradlew runApp -q -Pfeature=recordpattern```|[JEP 440](https://openjdk.org/jeps/440)|Final|21|
 | Packaging Tool*         |```./gradlew clean build && jpackage --name sealed --input build/libs --main-jar java21-features.jar --main-class sealed.App```|[JEP 392](https://openjdk.org/jeps/392)|Final|16|
 | Generational ZGC**      |```./gradlew runApp -q -Pfeature=zgc```|[JEP 439](https://openjdk.org/jeps/439)|Final|21|
-
+|Hidden Class|```./gradlew runApp -q -Pfeature=hidden```|[JEP 371](https://openjdk.org/jeps/371)|Final|15|
 
 
 '* - Packaged tool can be found in your applications and can be run like this in MacOS - /Applications/sealed.app/Contents/MacOS/sealed
