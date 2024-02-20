@@ -9,3 +9,6 @@ build
 .idea
 out
 
+#Tasks
+TODO.md
+
