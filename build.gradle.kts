@@ -12,7 +12,6 @@ task("runApp", JavaExec::class) {
     mainClass = "${feature}.App"
     classpath = sourceSets["main"].runtimeClasspath
     jvmArgs = listOf(
-            "-Xms512m", "-Xmx512m"
+            "-Xms512m", "-Xmx512m","-XX:+UseZGC","-XX:+ZGenerational"
     )
 }
-
