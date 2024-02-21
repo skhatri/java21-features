@@ -12,6 +12,11 @@ Features Tests and Examples
 | Generational ZGC**      |```./gradlew runApp -q -Pfeature=zgc```|[JEP 439](https://openjdk.org/jeps/439)|Final|21|
 |Hidden Class|```./gradlew runApp -q -Pfeature=hidden```|[JEP 371](https://openjdk.org/jeps/371)|Final|15|
 
-
 '* - Packaged tool can be found in your applications and can be run like this in MacOS - /Applications/sealed.app/Contents/MacOS/sealed
 '** - zgc performance can be inspected by running something like ```h2load -c50 -m20 --duration=120 --warm-up-time=5 --h1 http://localhost:8040/time``` 
+
+# others
+|Title|Command|
+|---|---|
+|Zero Copy |```./gradlew -q runApp -Pfeature=readbigfiles -Papp-args=data/lines.csv```|
+
